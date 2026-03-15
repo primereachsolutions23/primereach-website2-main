@@ -1,9 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
+      {/* Menu Button */}
+<div style={{ position: "fixed", top: 20, right: 20, zIndex: 1000 }}>
+
+<button
+onClick={() => setMenuOpen(!menuOpen)}
+style={{
+fontSize: "30px",
+background: "none",
+border: "none",
+cursor: "pointer"
+}}
+> 
+☰
+</button>
+
+{menuOpen && (
+<div
+style={{
+background: "white",
+padding: "20px",
+boxShadow: "0 5px 20px rgba(0,0,0,0.2)",
+borderRadius: "10px",
+marginTop: "10px"
+}}
+>
+
+<p><a href="#about">About Us</a></p>
+<p><a href="#contact">Contact Us</a></p>
+<p><a href="#policy">Privacy Policy</a></p>
+<p><a href="#terms">Terms & Conditions</a></p>
+
+</div>
+)}
+
+</div>
       {/* Hero Section */}
       <section
         style={{
@@ -254,12 +290,99 @@ export default function App() {
           </div>
         </div>
       </section>
+      <section id="about" style={{ padding: "80px 20px", textAlign: "center" }}>
+<h2>About Us</h2>
+
+<p>
+Prime Reach Solutions is a results-driven outsourcing company specializing in cold calling and lead generation services for businesses across the United States.
+</p>
+
+<p>
+Our mission is simple: help companies reach more potential customers, generate qualified leads, and grow faster without the high cost of building an in-house sales team.
+</p>
+
+<p>
+We provide trained agents with excellent English communication skills who represent your business professionally while engaging prospects and booking qualified appointments.
+</p>
+
+<p>• Cold Calling</p>
+<p>• Lead Generation</p>
+<p>• Appointment Setting</p>
+<p>• Customer Outreach</p>
+
+<p>
+Our team works with dedication and proven scripts to ensure every call brings your business closer to its next customer.
+</p>
+
+<p>
+We believe every conversation is an opportunity — and we make sure it counts.
+</p>
+</section>
+<section id="contact" style={{ padding: "80px 20px", textAlign: "center", background:"#f8f9fa" }}>
+<h2>Contact Us</h2>
+
+<p>We’d love to hear about your business and how we can help you generate more leads.</p>
+
+<p><strong>Prime Reach Solutions</strong></p>
+
+<p>Email: primereachsolutions23@gmail.com</p>
+
+<p>Website: primereachsolutions.com</p>
+
+<p>
+Or simply fill out the contact form and one of our team members will get back to you within 24 hours.
+</p>
+
+<p>Let’s grow your business together.</p>
+</section>
+<section id="policy" style={{ padding: "80px 20px", textAlign: "center" }}>
+<h2>Privacy Policy</h2>
+
+<p>
+Prime Reach Solutions respects your privacy and is committed to protecting your personal information.
+</p>
+
+<p>
+We collect only the information necessary to communicate with you and provide our services. This may include your name, email address, company name, and phone number.
+</p>
+
+<p>
+Your information will never be sold, rented, or shared with third parties without your consent, except when required by law.
+</p>
+
+<p>
+We use industry standard security measures to protect your data and ensure a safe experience when interacting with our website.
+</p>
+</section>
+<section id="terms" style={{ padding: "80px 20px", textAlign: "center", background:"#f8f9fa" }}>
+<h2>Terms & Conditions</h2>
+
+<p>
+By using this website, you agree to the following terms and conditions.
+</p>
+
+<p>
+Prime Reach Solutions provides cold calling and lead generation services intended to support business growth.
+</p>
+
+<p>
+While we strive to deliver high-quality leads and professional communication, results may vary depending on industry and campaign strategy.
+</p>
+
+<p>
+All content on this website including text, branding, and materials is the property of Prime Reach Solutions and may not be copied without permission.
+</p>
+
+<p>
+We reserve the right to update or modify these terms at any time.
+</p>
+</section>
 
       {/* Footer */}
       <footer
         style={{ textAlign: "center", padding: "30px", background: "#f1f1f1" }}
       >
-        ©️ 2026 PrimeReach Solutions. All rights reserved.
+        ©️ 2023 PrimeReach Solutions. All rights reserved.
       </footer>
     </div>
   );
