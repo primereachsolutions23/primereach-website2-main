@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Policy from "./pages/Policy";
+import Terms from "./pages/Terms";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <Router>
     <div style={{ fontFamily: "Arial, sans-serif", color: "black" }}>
       {/* Menu Button */}
 
@@ -36,24 +43,24 @@ export default function App() {
             }}
           >
             <p>
-              <a href="#about" style={{ color: "white" }}>
+              <Link to="/about" style={{ color: "white" }}>
                 About Us
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#contact" style={{ color: "white" }}>
+              <Link to="/contact" style={{ color: "white" }}>
                 Contact Us
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#policy" style={{ color: "white" }}>
+              <Link to="/policy" style={{ color: "white" }}>
                 Privacy Policy
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#terms" style={{ color: "white" }}>
+              <Link to="/terms" style={{ color: "white" }}>
                 Terms & Conditions
-              </a>
+              </Link>
             </p>
           </motion.div>
         )}
@@ -217,119 +224,20 @@ export default function App() {
       {/* Packages */}
 
       <section
-        style={{
-          padding: "80px 20px",
-          textAlign: "center",
-          background: "#adb5bd",
-        }}
-      >
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Our Packages
-        </motion.h2>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "40px",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            style={{
-              width: "300px",
-              padding: "30px",
-              boxShadow: "0 5px 20px rgba(0,0,0,0.1)",
-              borderRadius: "15px",
-              background: "#6c757d",
-            }}
-          >
-            <h3>Appointment Setter</h3>
-
-            <p>
-              <strong>$10 per hour / per agent</strong>
-            </p>
-
-            <p>✔️Dialer Included</p>
-            <p>✔️Professional Trainer</p>
-            <p>✔️Dedicated Team Leader</p>
-            <p>✔️Experienced agents</p>
-            <p>✔️Quality Assurance</p>
-            <p>✔️Daily reports</p>
-
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              style={{
-                marginTop: "20px",
-                width: "100%",
-                padding: "12px",
-                borderRadius: "10px",
-                border: "none",
-                background: "#28a745",
-                color: "black",
-                cursor: "pointer",
-              }}
-              onClick={() =>
-                (window.location.href =
-                  "https://calendly.com/primereachsolutions23/30min")
-              }
-            >
-              Set Appointment
-            </motion.button>
-          </motion.div>
-
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            style={{
-              width: "300px",
-              padding: "30px",
-              boxShadow: "0 5px 20px rgba(0,0,0,0.1)",
-              borderRadius: "15px",
-              background: "#6c757d",
-            }}
-          >
-            <h3>Cold Caller</h3>
-
-            <p>
-              <strong>$7 per hour / per agent</strong>
-            </p>
-
-            <p>✔️Dialer Included</p>
-            <p>✔️Professional Trainer</p>
-            <p>✔️Dedicated Team Leader</p>
-            <p>✔️Experienced agents</p>
-            <p>✔️Quality Assurance</p>
-            <p>✔️Daily reports</p>
-
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              style={{
-                marginTop: "20px",
-                width: "100%",
-                padding: "12px",
-                borderRadius: "10px",
-                border: "none",
-                background: "#28a745",
-                color: "black",
-                cursor: "pointer",
-              }}
-              onClick={() =>
-                (window.location.href =
-                  "https://calendly.com/primereachsolutions23/30min")
-              }
-            >
-              Set Appointment
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
+  style={{
+    padding: "80px 20px",
+    textAlign: "center",
+    background: "#adb5bd",
+  }}
+>
+  <motion.h2
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
+    Our Packages
+  </motion.h2>
+</section>
 
       {/* Footer */}
 
@@ -338,6 +246,16 @@ export default function App() {
       >
         ©️ 2023 PrimeReach Solutions. All rights reserved.
       </footer>
+
+      <Routes>
+  <Route path="/" element={<div></div>} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/policy" element={<Policy />} />
+  <Route path="/terms" element={<Terms />} />
+</Routes>
+
     </div>
+    </Router>
   );
-}
+  }
