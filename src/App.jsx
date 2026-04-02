@@ -20,7 +20,7 @@ export default function App() {
     padding: "80px 20px",
     textAlign: "center",
     background: bg || "#1a2a44",
-    color: bg === "#adb5bd" ? "black" : "#adb5bd",
+    color: bg === "#d7dce2" ? "black" : "#d7dce2",
     minHeight: "100vh",
   });
 
@@ -101,7 +101,7 @@ export default function App() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              style={{ fontSize: "40px", marginBottom: "20px", color: "#adb5bd" }}
+              style={{ fontSize: "40px", marginBottom: "20px", color: "#d7dce2" }}
             >
               Grow Your Business with Professional Cold Calling & Lead Generation
             </motion.h1>
@@ -128,7 +128,7 @@ export default function App() {
                 fontSize: "18px",
                 borderRadius: "12px",
                 border: "none",
-                background: "#adb5bd",
+                background: "#d7dce2",
                 color: "black",
                 cursor: "pointer",
                 marginTop: "20px",
@@ -147,7 +147,7 @@ export default function App() {
             whileInView="show"
             viewport={{ once: true }}
             variants={fadeUp}
-            style={sectionStyle("#adb5bd")}
+            style={sectionStyle("#d7dce2")}
           >
             <h2 style={{ fontSize: "32px", marginBottom: "40px", color: "black" }}>
               Why Choose Us
@@ -172,7 +172,7 @@ export default function App() {
             variants={fadeUp}
             style={sectionStyle("#1a2a44")}
           >
-            <h2 style={{ fontSize: "32px", marginBottom: "40px", color: "#adb5bd" }}>
+            <h2 style={{ fontSize: "32px", marginBottom: "40px", color: "#d7dce2" }}>
               Our Services
             </h2>
             <p><strong>Cold Calling</strong></p>
@@ -194,7 +194,7 @@ export default function App() {
           whileInView="show"
           viewport={{ once: true }}
           variants={fadeUp}
-          style={sectionStyle("#adb5bd")}
+          style={sectionStyle("#d7dce2")}
         >
           <h2>About Us</h2>
           <p>Prime Reach Solutions is a results-driven outsourcing company specializing in cold calling and lead generation services for businesses across the United States.</p>
@@ -218,7 +218,7 @@ export default function App() {
           variants={fadeUp}
           style={sectionStyle("#1a2a44")}
         >
-          <h2 style={{ color: "#adb5bd" }}>Contact Us</h2>
+          <h2 style={{ color: "#d7dce2" }}>Contact Us</h2>
           <p>We'd love to hear about your business and how we can help you generate more leads.</p>
           <p><strong>Prime Reach Solutions</strong></p>
           <p>Email: primereachsolutions23@gmail.com</p>
@@ -235,7 +235,7 @@ export default function App() {
           whileInView="show"
           viewport={{ once: true }}
           variants={fadeUp}
-          style={sectionStyle("#adb5bd")}
+          style={sectionStyle("#d7dce2")}
         >
           <h2>Privacy Policy</h2>
           <p>Prime Reach Solutions respects your privacy and is committed to protecting your personal information.</p>
@@ -254,7 +254,7 @@ export default function App() {
           variants={fadeUp}
           style={sectionStyle("#1a2a44")}
         >
-          <h2 style={{ color: "#adb5bd" }}>Terms & Conditions</h2>
+          <h2 style={{ color: "#d7dce2" }}>Terms & Conditions</h2>
           <p>By using this website, you agree to the following terms and conditions.</p>
           <p>Prime Reach Solutions provides cold calling and lead generation services intended to support business growth.</p>
           <p>While we strive to deliver high-quality leads and professional communication, results may vary depending on industry and campaign strategy.</p>
