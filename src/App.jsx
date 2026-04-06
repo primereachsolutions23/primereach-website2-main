@@ -29,17 +29,20 @@ export default function App() {
       {/* Menu Button */}
       <div style={{ position: "fixed", top: 20, right: 20, zIndex: 1000 }}>
         <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          style={{
-            fontSize: "30px",
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            color: "black",
-          }}
-        >
-          ☰
-        </button>
+  onClick={() => setMenuOpen(!menuOpen)}
+  style={{
+    fontSize: "30px",
+    background: "#d7dce2",
+    border: "2px solid black",
+    borderRadius: "14px",
+    cursor: "pointer",
+    color: "black",
+    padding: "10px 16px",
+    boxShadow: "0 6px 15px rgba(0,0,0,0.25)",
+  }}
+>
+  ☰
+</button>
 
         {menuOpen && (
           <motion.div
