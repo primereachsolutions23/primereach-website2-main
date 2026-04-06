@@ -90,6 +90,7 @@ export default function App() {
       {/* Home Section */}
       {activeSection === "home" && (
         <>
+          {/* Hero Section */}
           <motion.section
             initial="hidden"
             whileInView="show"
@@ -141,162 +142,8 @@ export default function App() {
               Book a Free Consultation
             </motion.button>
           </motion.section>
-          
-{/* Packages Section */}
-<motion.section
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true }}
-  variants={fadeUp}
-  style={sectionStyle("#adb5bd")}
->
-  <h2 style={{ fontSize: "32px", marginBottom: "40px", color: "black" }}>
-    Our Packages
-  </h2>
 
-  <div
-    style={{
-      display: "flex",
-      flexWrap: "wrap",
-      justifyContent: "center",
-      gap: "30px",
-      marginTop: "30px",
-    }}
-  >
-    {/* Package 1 */}
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-      style={{
-        width: "300px",
-        padding: "30px",
-        borderRadius: "15px",
-        background: "#6c757d",
-        boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
-        color: "black",
-      }}
-    >
-      <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>3 Agents</h3>
-      <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$10/hr</h2>
-      <p>✔ Dialer</p>
-      <p>✔ Trainer</p>
-      <p>✔ Quality</p>
-      <p>✔ Team Leader</p>
-      <p>✔ Experienced Agents</p>
-
-      <motion.button
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.95 }}
-        style={{
-          marginTop: "20px",
-          width: "100%",
-          padding: "12px",
-          borderRadius: "10px",
-          border: "none",
-          background: "#28a745",
-          color: "white",
-          cursor: "pointer",
-          fontSize: "16px",
-        }}
-        onClick={() =>
-          (window.location.href =
-            "https://calendly.com/primereachsolutions23/30min")
-        }
-      >
-        Set Appointment
-      </motion.button>
-    </motion.div>
-
-    {/* Package 2 */}
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-      style={{
-        width: "300px",
-        padding: "30px",
-        borderRadius: "15px",
-        background: "#1a2a44",
-        boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
-        color: "#adb5bd",
-      }}
-    >
-      <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>6 Agents</h3>
-      <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$8/hr</h2>
-      <p>✔ Dialer</p>
-      <p>✔ Trainer</p>
-      <p>✔ Quality</p>
-      <p>✔ Team Leader</p>
-      <p>✔ Experienced Agents</p>
-
-      <motion.button
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.95 }}
-        style={{
-          marginTop: "20px",
-          width: "100%",
-          padding: "12px",
-          borderRadius: "10px",
-          border: "none",
-          background: "#28a745",
-          color: "white",
-          cursor: "pointer",
-          fontSize: "16px",
-        }}
-        onClick={() =>
-          (window.location.href =
-            "https://calendly.com/primereachsolutions23/30min")
-        }
-      >
-        Set Appointment
-      </motion.button>
-    </motion.div>
-
-    {/* Package 3 */}
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-      style={{
-        width: "300px",
-        padding: "30px",
-        borderRadius: "15px",
-        background: "#6c757d",
-        boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
-        color: "black",
-      }}
-    >
-      <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>10+ Agents</h3>
-      <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$6.5/hr</h2>
-      <p>✔ Dialer</p>
-      <p>✔ Trainer</p>
-      <p>✔ Quality</p>
-      <p>✔ Team Leader</p>
-      <p>✔ Experienced Agents</p>
-
-      <motion.button
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.95 }}
-        style={{
-          marginTop: "20px",
-          width: "100%",
-          padding: "12px",
-          borderRadius: "10px",
-          border: "none",
-          background: "#28a745",
-          color: "white",
-          cursor: "pointer",
-          fontSize: "16px",
-        }}
-        onClick={() =>
-          (window.location.href =
-            "https://calendly.com/primereachsolutions23/30min")
-        }
-      >
-        Set Appointment
-      </motion.button>
-    </motion.div>
-  </div>
-</motion.section>
-
+          {/* Why Choose Us Section */}
           <motion.section
             initial="hidden"
             whileInView="show"
@@ -320,6 +167,162 @@ export default function App() {
             <p>Our services can be customized to fit startups and established businesses.</p>
           </motion.section>
 
+          {/* Packages Section */}
+          <motion.section
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            style={sectionStyle("#adb5bd")}
+          >
+            <h2 style={{ fontSize: "32px", marginBottom: "40px", color: "black" }}>
+              Our Packages
+            </h2>
+
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                gap: "30px",
+                marginTop: "30px",
+              }}
+            >
+              {/* Package 1 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                style={{
+                  width: "300px",
+                  padding: "30px",
+                  borderRadius: "15px",
+                  background: "#6c757d",
+                  boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
+                  color: "black",
+                }}
+              >
+                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>3 Agents</h3>
+                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$10/hr</h2>
+                <p>✔ Dialer</p>
+                <p>✔ Trainer</p>
+                <p>✔ Quality</p>
+                <p>✔ Team Leader</p>
+                <p>✔ Experienced Agents</p>
+
+                <motion.button
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    marginTop: "20px",
+                    width: "100%",
+                    padding: "12px",
+                    borderRadius: "10px",
+                    border: "none",
+                    background: "#28a745",
+                    color: "white",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                  }}
+                  onClick={() =>
+                    (window.location.href =
+                      "https://calendly.com/primereachsolutions23/30min")
+                  }
+                >
+                  Set Appointment
+                </motion.button>
+              </motion.div>
+
+              {/* Package 2 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                style={{
+                  width: "300px",
+                  padding: "30px",
+                  borderRadius: "15px",
+                  background: "#1a2a44",
+                  boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
+                  color: "#adb5bd",
+                }}
+              >
+                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>6 Agents</h3>
+                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$8/hr</h2>
+                <p>✔ Dialer</p>
+                <p>✔ Trainer</p>
+                <p>✔ Quality</p>
+                <p>✔ Team Leader</p>
+                <p>✔ Experienced Agents</p>
+
+                <motion.button
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    marginTop: "20px",
+                    width: "100%",
+                    padding: "12px",
+                    borderRadius: "10px",
+                    border: "none",
+                    background: "#28a745",
+                    color: "white",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                  }}
+                  onClick={() =>
+                    (window.location.href =
+                      "https://calendly.com/primereachsolutions23/30min")
+                  }
+                >
+                  Set Appointment
+                </motion.button>
+              </motion.div>
+
+              {/* Package 3 */}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                style={{
+                  width: "300px",
+                  padding: "30px",
+                  borderRadius: "15px",
+                  background: "#6c757d",
+                  boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
+                  color: "black",
+                }}
+              >
+                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>10+ Agents</h3>
+                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$6.5/hr</h2>
+                <p>✔ Dialer</p>
+                <p>✔ Trainer</p>
+                <p>✔ Quality</p>
+                <p>✔ Team Leader</p>
+                <p>✔ Experienced Agents</p>
+
+                <motion.button
+                  whileHover={{ scale: 1.08 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    marginTop: "20px",
+                    width: "100%",
+                    padding: "12px",
+                    borderRadius: "10px",
+                    border: "none",
+                    background: "#28a745",
+                    color: "white",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                  }}
+                  onClick={() =>
+                    (window.location.href =
+                      "https://calendly.com/primereachsolutions23/30min")
+                  }
+                >
+                  Set Appointment
+                </motion.button>
+              </motion.div>
+            </div>
+          </motion.section>
+
+          {/* Services Section */}
           <motion.section
             initial="hidden"
             whileInView="show"
