@@ -196,7 +196,7 @@ export default function App() {
                   width: "300px",
                   padding: "30px",
                   borderRadius: "15px",
-                  background: "#6c757d",
+                  background: "#dfecf7",
                   boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
                   color: "black",
                 }}
@@ -284,7 +284,7 @@ export default function App() {
                   width: "300px",
                   padding: "30px",
                   borderRadius: "15px",
-                  background: "#6c757d",
+                  background: "#dfecf7",
                   boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
                   color: "black",
                 }}
