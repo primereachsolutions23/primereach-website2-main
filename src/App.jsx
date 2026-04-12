@@ -157,17 +157,16 @@ export default function App() {
             <h2 style={{ fontSize: "32px", marginBottom: "40px", color: "black" }}>
               Why Choose Us
             </h2>
-            <p><strong>Experienced Agents</strong></p>
-            <p>Our trained agents communicate professionally with prospects and represent your brand with confidence.</p>
+            
+            <p><strong>Experienced agents trained in cold calling and appointment setting</strong></p>
+            <p><strong>Strong communication and professional client handling</strong></p>
+            <p><strong>Proven experience across multiple industries including solar, real estate, insurance, roofing, and more</strong></p>
+            <p><strong>Focus on delivering qualified leads and real opportunities</strong></p>
+            <p><strong>Reliable performance with clear tracking and reporting</strong></p>
+            <p><strong>Flexible teams that scale with your business needs</strong></p>
+            <p><strong>Hiring an in-house sales team is expensive. We provide skilled agents at a fraction of the cost.</strong></p>
 
-            <p><strong>Cost Effective Solution</strong></p>
-            <p>Hiring an in-house sales team is expensive. We provide skilled agents at a fraction of the cost.</p>
-
-            <p><strong>Consistent Lead Flow</strong></p>
-            <p>We generate qualified leads and schedule appointments to keep your sales pipeline full.</p>
-
-            <p><strong>Flexible Campaigns</strong></p>
-            <p>Our services can be customized to fit startups and established businesses.</p>
+           
           </motion.section>
 
           {/* Packages Section */}
