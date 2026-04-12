@@ -159,14 +159,19 @@ export default function App() {
             </h2>
             
             <p><strong>Experienced agents trained in cold calling and appointment setting</strong></p>
-            <p><strong>Strong communication and professional client handling</strong></p>
-            <p><strong>Proven experience across multiple industries including solar, real estate, insurance, roofing, and more</strong></p>
-            <p><strong>Focus on delivering qualified leads and real opportunities</strong></p>
-            <p><strong>Reliable performance with clear tracking and reporting</strong></p>
-            <p><strong>Flexible teams that scale with your business needs</strong></p>
-            <p><strong>Hiring an in-house sales team is expensive. We provide skilled agents at a fraction of the cost.</strong></p>
 
-           
+            <p><strong>Strong communication and professional client handling</strong></p>
+
+            <p><strong>Proven experience across multiple industries including solar, real estate, insurance, roofing, and more</strong></p>
+
+            <p><strong>Focus on delivering qualified leads and real opportunities</strong></p>
+
+            <p><strong>Reliable performance with clear tracking and reporting</strong></p>
+
+            <p><strong>Flexible teams that scale with your business needs</strong></p>
+            
+
+          
           </motion.section>
 
           {/* Packages Section */}
@@ -206,10 +211,10 @@ export default function App() {
                 <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>3 Agents</h3>
                 <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$10/hr</h2>
                 <p>✔ Dialer</p>
-                <p>✔ Trainer</p>
-                <p>✔ Quality</p>
-                <p>✔ Team Leader</p>
                 <p>✔ Experienced Agents</p>
+                <p>✔ Team Leaders & Trainers</p>
+                <p>✔ Quality Assurance</p>
+                <p>✔ Daily Reports</p>
 
                 <motion.button
                   whileHover={{ scale: 1.08 }}
@@ -250,10 +255,10 @@ export default function App() {
                 <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>6 Agents</h3>
                 <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$8/hr</h2>
                 <p>✔ Dialer</p>
-                <p>✔ Trainer</p>
-                <p>✔ Quality</p>
-                <p>✔ Team Leader</p>
                 <p>✔ Experienced Agents</p>
+                <p>✔ Team Leaders & Trainers</p>
+                <p>✔ Quality Assurance</p>
+                <p>✔ Daily Reports</p>
 
                 <motion.button
                   whileHover={{ scale: 1.08 }}
@@ -294,10 +299,10 @@ export default function App() {
                 <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>10+ Agents</h3>
                 <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$6.5/hr</h2>
                 <p>✔ Dialer</p>
-                <p>✔ Trainer</p>
-                <p>✔ Quality</p>
-                <p>✔ Team Leader</p>
                 <p>✔ Experienced Agents</p>
+                <p>✔ Team Leaders & Trainers</p>
+                <p>✔ Quality Assurance</p>
+                <p>✔ Daily Reports</p>
 
                 <motion.button
                   whileHover={{ scale: 1.08 }}
@@ -379,11 +384,10 @@ export default function App() {
           style={sectionStyle("#1a2a44")}
         >
           <h2 style={{ color: "#d7dce2" }}>Contact Us</h2>
-          <p>We'd love to hear about your business and how we can help you generate more leads.</p>
           <p><strong>Prime Reach Solutions</strong></p>
           <p>Email: primereachsolutions23@gmail.com</p>
-          <p>Website: primereachsolutions.com</p>
-          <p>Or simply fill out the contact form and one of our team members will get back to you within 24 hours.</p>
+          <p>Website: www.primereach-solutions.com</p>
+          <p>Or Schedule an appointment today to review your campaign and discover how we can help you scale.</p>
           <p>Let's grow your business together.</p>
         </motion.section>
       )}
