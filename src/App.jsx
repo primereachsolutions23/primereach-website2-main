@@ -283,49 +283,7 @@ export default function App() {
                 </motion.button>
               </motion.div>
 
-              {/* Package 3 */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                style={{
-                  width: "300px",
-                  padding: "30px",
-                  borderRadius: "15px",
-                  background: "#dfecf7",
-                  boxShadow: "0 5px 20px rgba(0,0,0,0.15)",
-                  color: "black",
-                }}
-              >
-                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>10+ Agents</h3>
-                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$6.5/hr</h2>
-                <p>✔ Dialer</p>
-                <p>✔ Experienced Agents</p>
-                <p>✔ Team Leaders & Trainers</p>
-                <p>✔ Quality Assurance</p>
-                <p>✔ Daily Reports</p>
-
-                <motion.button
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.95 }}
-                  style={{
-                    marginTop: "20px",
-                    width: "100%",
-                    padding: "12px",
-                    borderRadius: "10px",
-                    border: "none",
-                    background: "#28a745",
-                    color: "white",
-                    cursor: "pointer",
-                    fontSize: "16px",
-                  }}
-                  onClick={() =>
-                    (window.location.href =
-                      "https://calendly.com/primereachsolutions23/30min")
-                  }
-                >
-                  Set Appointment
-                </motion.button>
-              </motion.div>
+              
             </div>
           </motion.section>
 
