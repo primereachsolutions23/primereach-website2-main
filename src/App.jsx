@@ -208,8 +208,8 @@ export default function App() {
                   color: "black",
                 }}
               >
-                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>3 Agents</h3>
-                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$10/hr</h2>
+                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>With Dialer</h3>
+                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$8/hr</h2>
                 <p>✔ Dialer</p>
                 <p>✔ Experienced Agents</p>
                 <p>✔ Team Leaders & Trainers</p>
@@ -252,9 +252,8 @@ export default function App() {
                   color: "#adb5bd",
                 }}
               >
-                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>6 Agents</h3>
-                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$8/hr</h2>
-                <p>✔ Dialer</p>
+                <h3 style={{ fontSize: "28px", marginBottom: "10px" }}>Without Dialer</h3>
+                <h2 style={{ fontSize: "34px", marginBottom: "20px" }}>$6/hr</h2>
                 <p>✔ Experienced Agents</p>
                 <p>✔ Team Leaders & Trainers</p>
                 <p>✔ Quality Assurance</p>
